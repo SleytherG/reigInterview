@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="grid-news">
+    <div class="rectangle" *ngFor="let item of data">
+      <i class="bi bi-clock"></i>
+      <small class="mx-2">3 hours ago by author</small>
+      <div class="d-flex justify-content-between">
+        <p>Yes, React is taking over front-end development. The question is why.
+        </p>
+        <img class="imgHeart" [src]="item.imgSrc" alt="">
+      </div>
+    </div>
+  </div>
+</div>

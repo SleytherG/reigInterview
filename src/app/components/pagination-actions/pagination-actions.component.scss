@@ -1,0 +1,20 @@
+.paginacion {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.paginacion a {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 6px 12px 4px;
+  margin: 0 8px;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paginacion a.active {
+  background-color: #1890ff;
+  color: #fff;
+}

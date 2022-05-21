@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-3">
+    <select [formControl]="filterSearch" class="form-control" (change)="searchByQuery($event)">
+      <option value="" disabled selected>Select your news</option>
+      <option *ngFor="let item of frameworksLibraries" [value]="item.name">
+        {{ item.name }}
+      </option>
+    </select>
+  </div>
+</div>

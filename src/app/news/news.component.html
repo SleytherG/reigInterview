@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>HACKER NEWS</h1>
+
+  <div class="row">
+    <div class="col-12 text-center mt-5">
+      <button class="btnWindow" [routerLink]="['all']" routerLinkActive="active">All</button>
+      <button class="btnWindow" [routerLink]="['myFaves']" routerLinkActive="active">My faves</button>
+    </div>
+  </div>
+  <div class="mt-5">
+    <app-select-news></app-select-news>
+  </div>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="container">
+  <app-pagination-actions></app-pagination-actions>
+</footer>

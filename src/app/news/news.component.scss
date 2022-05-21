@@ -1,0 +1,16 @@
+button {
+  padding: 0 40px 0 40px;
+  //border: none;
+}
+
+.btnWindow {
+  color: black;
+  border: 0;
+}
+
+.btnWindow.active {
+  color: #1797ff;
+  border: 1px solid #1797ff;
+}
+
+

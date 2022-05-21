@@ -1,0 +1,19 @@
+<div class="container" *ngIf="this.apiInterviewService.showCards">
+  <div class="grid-news">
+      <div *ngFor="let item of data">
+      <a style="color:black; text-decoration: none" [href]="item.story_url" target="_blank">
+      <div class="rectangle" >
+        <i class="bi bi-clock"></i>
+        <small class="mx-2">{{ item['created_at'] }} by {{ item['author'] }}</small>
+<!--        <small class="mx-2">{{ timeAgoPost }} by {{ item['author'] }}</small>-->
+        <div class="d-flex justify-content-between">
+          <p>{{ item.story_title }}
+          </p>
+            <img class="imgHeart" src="./assets/iconFavorite.svg" alt="">
+        </div>
+      </div>
+        </a>
+  </div>
+  </div>
+
+</div>
